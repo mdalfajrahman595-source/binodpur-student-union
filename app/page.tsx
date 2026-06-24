@@ -22,22 +22,48 @@ interface Stat {
   icon: string;
 }
 
+interface BloodStat {
+  value: string;
+  label: string;
+  icon: string;
+}
+
+interface MembershipBenefit {
+  icon: string;
+  text: string;
+}
+
 // ─── Data ─────────────────────────────────────────────────────────────────────
 const navLinks = [
-  { label: "হোম", href: "#home" },
-  { label: "আমাদের সম্পর্কে", href: "#about" },
-  { label: "বর্তমান কমিটি", href: "#committee" },
-  { label: "প্রাক্তন কমিটি", href: "#ex-committee" },
-  { label: "কার্যক্রম", href: "#activities" },
-  { label: "গ্যালারি", href: "#gallery" },
-  { label: "নোটিশ", href: "#notices" },
-  { label: "যোগাযোগ", href: "#contact" },
+  { label: "হোম", href: "/" },
+  { label: "আমাদের সম্পর্কে", href: "/#about" },
+  { label: "বর্তমান কমিটি", href: "/committee" },
+  { label: "প্রাক্তন কমিটি", href: "/former-committee" },
+  { label: "কার্যক্রম", href: "/#activities" },
+  { label: "গ্যালারি", href: "/gallery" },
+  { label: "রক্তদাতা", href: "/blood-donors" },
+  { label: "সদস্য নিবন্ধন", href: "/registration" },
+  { label: "নোটিশ", href: "/notices" },
+  { label: "যোগাযোগ", href: "/#contact" },
 ];
 
 const stats: Stat[] = [
   { value: "৫০০+", label: "মোট সদস্য", icon: "👥" },
   { value: "১২০+", label: "মোট কার্যক্রম", icon: "📋" },
   { value: "৮০+", label: "রক্তদাতা", icon: "🩸" },
+];
+
+const bloodStats: BloodStat[] = [
+  { value: "৮০+", label: "মোট রক্তদাতা", icon: "🩸" },
+  { value: "৮টি", label: "উপলব্ধ রক্তের গ্রুপ", icon: "🧬" },
+  { value: "১২+", label: "সাম্প্রতিক রক্তদান", icon: "📅" },
+];
+
+const membershipBenefits: MembershipBenefit[] = [
+  { icon: "🤝", text: "সমাজসেবামূলক কার্যক্রমে অংশগ্রহণ" },
+  { icon: "🩸", text: "রক্তদান কার্যক্রমে সম্পৃক্ততা" },
+  { icon: "🌟", text: "নেতৃত্ব বিকাশের সুযোগ" },
+  { icon: "🎓", text: "শিক্ষার্থীদের নেটওয়ার্ক গঠন" },
 ];
 
 const activities: Activity[] = [
@@ -372,7 +398,7 @@ function Welcome() {
             </p>
             <div className="flex flex-col sm:flex-row gap-6">
               {[
-                { label: "প্রতিষ্ঠাকাল", value: "২০২২ সাল" },
+                { label: "প্রতিষ্ঠাকাল", value: "২০২৪ সাল" },
                 { label: "সক্রিয় জেলা", value: "বগুড়া" },
               ].map((item) => (
                 <div
@@ -489,6 +515,145 @@ function Activities() {
               <div className="mt-4 h-0.5 bg-gradient-to-r from-yellow-400/0 via-yellow-400 to-yellow-400/0 opacity-0 group-hover:opacity-100 transition-opacity" />
             </div>
           ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── Emergency Blood Support ────────────────────────────────────────────────────
+function EmergencyBlood() {
+  const [visible, setVisible] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) setVisible(true);
+      },
+      { threshold: 0.3 }
+    );
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <section
+      id="blood-support"
+      ref={ref}
+      className="py-20 bg-white relative overflow-hidden"
+    >
+      {/* Background decoration */}
+      <div className="absolute inset-0 opacity-5 pointer-events-none">
+        <div className="absolute top-0 right-0 w-72 h-72 rounded-full bg-red-500 blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-yellow-400 blur-3xl" />
+      </div>
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div className="bg-gradient-to-br from-[#0a1f44] to-[#143166] rounded-2xl p-8 sm:p-12 shadow-2xl border border-yellow-400/10 relative overflow-hidden">
+          {/* Emergency accent ring */}
+          <div className="absolute -top-10 -right-10 w-40 h-40 rounded-full border border-red-400/20" />
+
+          <div className="relative text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-wide text-white">
+              🩸 জরুরি রক্তের প্রয়োজন?
+            </h2>
+            <GoldDivider />
+            <p className="mt-2 text-base md:text-lg max-w-2xl mx-auto text-blue-200">
+              বিনোদপুর ছাত্র পরিষদের রক্তদাতা ডাটাবেস থেকে দ্রুত রক্তদাতা
+              খুঁজুন এবং প্রয়োজনে সরাসরি যোগাযোগ করুন।
+            </p>
+          </div>
+
+          {/* Statistics cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
+            {bloodStats.map((stat, i) => (
+              <div
+                key={i}
+                className={`text-center p-6 rounded-2xl border border-yellow-400/20 bg-white/5 backdrop-blur-sm transition-all duration-700 ${
+                  visible
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-8"
+                }`}
+                style={{ transitionDelay: `${i * 150}ms` }}
+              >
+                <div className="text-4xl mb-3">{stat.icon}</div>
+                <div className="text-4xl font-extrabold text-yellow-400 mb-2">
+                  {stat.value}
+                </div>
+                <div className="text-blue-200 text-base font-medium">
+                  {stat.label}
+                </div>
+                <div className="mt-3 h-1 w-14 bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto rounded-full" />
+              </div>
+            ))}
+          </div>
+
+          {/* CTA buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center relative">
+            <a
+              href="/blood-donors"
+              className="px-8 py-3.5 bg-gradient-to-r from-yellow-400 to-yellow-600 text-[#0a1f44] font-bold rounded-lg shadow-lg shadow-yellow-500/30 hover:shadow-yellow-500/50 hover:scale-105 transition-all duration-200 text-center"
+            >
+              রক্তদাতা খুঁজুন
+            </a>
+            <a
+              href="/#contact"
+              className="px-8 py-3.5 border border-red-400/40 text-red-300 font-semibold rounded-lg hover:bg-red-400/10 hover:border-red-400 transition-all duration-200 text-center"
+            >
+              জরুরি সহায়তা
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── Membership Registration ────────────────────────────────────────────────────
+function Membership() {
+  return (
+    <section id="membership" className="py-20 bg-[#f5f8ff]">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Text column */}
+          <div>
+            <p className="text-yellow-500 font-semibold tracking-widest text-sm uppercase mb-2">
+              আমাদের সাথে যুক্ত হোন
+            </p>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-[#0a1f44] mb-4 leading-tight">
+              👥 বিনোদপুর ছাত্র পরিষদের সদস্য হোন
+            </h2>
+            <GoldDivider />
+            <p className="text-slate-600 leading-relaxed text-base mb-6 mt-4">
+              আমাদের সংগঠনের সদস্য হয়ে শিক্ষা, সমাজসেবা, রক্তদান ও বিভিন্ন
+              উন্নয়নমূলক কার্যক্রমে অংশগ্রহণ করুন।
+            </p>
+            <a
+              href="/registration"
+              className="inline-block px-8 py-3.5 bg-gradient-to-r from-yellow-400 to-yellow-600 text-[#0a1f44] font-bold rounded-lg shadow-lg shadow-yellow-500/30 hover:shadow-yellow-500/50 hover:scale-105 transition-all duration-200"
+            >
+              সদস্য নিবন্ধন করুন
+            </a>
+          </div>
+
+          {/* Benefits cards column */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            {membershipBenefits.map((benefit, i) => (
+              <div
+                key={i}
+                className="bg-white rounded-xl p-6 shadow-sm hover:shadow-xl border border-slate-100 hover:border-yellow-300 transition-all duration-300 group hover:-translate-y-1"
+              >
+                <div className="w-12 h-12 rounded-xl bg-[#f0f4ff] flex items-center justify-center text-2xl flex-shrink-0 group-hover:bg-yellow-50 transition-colors mb-3">
+                  {benefit.icon}
+                </div>
+                <p className="text-[#0a1f44] font-semibold text-sm leading-relaxed group-hover:text-yellow-600 transition-colors">
+                  {benefit.text}
+                </p>
+                <div className="mt-3 h-0.5 bg-gradient-to-r from-yellow-400/0 via-yellow-400 to-yellow-400/0 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
@@ -646,6 +811,8 @@ export default function Home() {
       <Welcome />
       <Statistics />
       <Activities />
+      <EmergencyBlood />
+      <Membership />
       <Notices />
       <Footer />
     </main>
