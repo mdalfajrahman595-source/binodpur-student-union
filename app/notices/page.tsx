@@ -620,9 +620,12 @@ function Footer() {
         <div className="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-slate-500">
           <p>© ২০২৬ বিনোদপুর ছাত্র পরিষদ। সর্বস্বত্ব সংরক্ষিত।</p>
           <p>
-            ওয়েবসাইটটি তৈরি ও পরিচালনায়:{" "}
-            <span className="text-yellow-400 font-semibold">আলফাজ রহমান</span>
-          </p>
+  ওয়েবসাইটটি তৈরি ও পরিচালনায়:{" "}
+  <span className="text-yellow-400 font-semibold">আলফাজ রহমান</span>
+  <span className="block text-slate-600 text-xs mt-0.5">
+    কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং, নেত্রকোনা বিশ্ববিদ্যালয়
+  </span>
+</p>
         </div>
       </div>
     </footer>
