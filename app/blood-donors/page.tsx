@@ -57,7 +57,7 @@ const donors: Donor[] = [
     phone: "+88019XXXXXX",
     location: "বিনোদপুর উত্তরপাড়া, শেরপুর",
     lastDonation: "৫ এপ্রিল, ২০২৬",
-    available: true,
+    available: false,
   },
   {
     name: "মো. শাহরিয়ার কবির",
@@ -65,7 +65,7 @@ const donors: Donor[] = [
     phone: "+880XXXXXXXX",
     location: "ধুনট রোড, শেরপুর, বগুড়া",
     lastDonation: "১৮ ডিসেম্বর, ২০২৫",
-    available: true,
+    available: false,
   },
   {
     name: "তানভীর আহমেদ",
@@ -81,7 +81,7 @@ const donors: Donor[] = [
     phone: "+8801XXXXXXX",
     location: "শেরপুর সদর, বগুড়া",
     lastDonation: "১২ ফেব্রুয়ারি, ২০২৬",
-    available: true,
+    available: false,
   },
   {
     name: "মো. জাহিদ হাসান",
@@ -89,7 +89,7 @@ const donors: Donor[] = [
     phone: "+880XXXXXXXX",
     location: "কুসুম্বী, শেরপুর, বগুড়া",
     lastDonation: "৮ জুন, ২০২৬",
-    available: true,
+    available: false,
   },
   {
     name: "নুসরাত জাহান",
@@ -105,7 +105,7 @@ const donors: Donor[] = [
     phone: "+88016XXXXXX",
     location: "ঘোগা, শেরপুর, বগুড়া",
     lastDonation: "২ এপ্রিল, ২০২৬",
-    available: true,
+    available: false,
   },
   {
     name: "রাকিবুল হাসান",
@@ -113,7 +113,7 @@ const donors: Donor[] = [
     phone: "+8801XXXXXXX",
     location: "বিনোদপুর বাজারপাড়া, শেরপুর",
     lastDonation: "২৫ জুন, ২০২৬",
-    available: true,
+    available: false,
   },
   {
     name: "সুমাইয়া আক্তার",
@@ -121,7 +121,7 @@ const donors: Donor[] = [
     phone: "+880XXXXXXX",
     location: "শেরপুর কলেজ রোড, বগুড়া",
     lastDonation: "১৯ জানুয়ারি, ২০২৬",
-    available: true,
+    available: false,
   },
   {
     name: "মো. নাজমুল হক",
@@ -129,7 +129,7 @@ const donors: Donor[] = [
     phone: "+8801XXXXXXX",
     location: "বিনোদপুর স্কুলপাড়া, শেরপুর",
     lastDonation: "৭ মে, ২০২৬",
-    available: true,
+    available: false,
   },
 ];
 
