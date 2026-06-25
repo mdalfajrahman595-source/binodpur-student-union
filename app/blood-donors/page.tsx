@@ -36,25 +36,25 @@ const bloodGroups = ["A+", "A-", "B+", "B-", "O+", "O-", "AB+", "AB-"];
 
 const donors: Donor[] = [
   {
-    name: "মোহাম্মদ রফিকুল ইসলাম",
+    name: "ইউসুফ আলী সাইম",
     bloodGroup: "O+",
-    phone: "+8801712345678",
+    phone: "+8801783656525",
     location: "বিনোদপুর, সুঘাট, শেরপুর, বগুড়া",
-    lastDonation: "১০ মার্চ, ২০২৬",
+    lastDonation: "null",
     available: true,
   },
   {
-    name: "আব্দুল্লাহ আল মামুন",
-    bloodGroup: "A+",
-    phone: "+8801812345679",
-    location: "সুঘাট বাজার, শেরপুর, বগুড়া",
+    name: "ইউনুস আলী সিয়াম",
+    bloodGroup: "O+",
+    phone: "+8801760100542",
+    location: "বিনোদপুর, সুঘাট, শেরপুর, বগুড়া",
     lastDonation: "২২ জানুয়ারি, ২০২৬",
     available: true,
   },
   {
     name: "ফাতেমা খাতুন",
     bloodGroup: "B+",
-    phone: "+8801912345680",
+    phone: "+88019XXXXXX",
     location: "বিনোদপুর উত্তরপাড়া, শেরপুর",
     lastDonation: "৫ এপ্রিল, ২০২৬",
     available: true,
@@ -62,7 +62,7 @@ const donors: Donor[] = [
   {
     name: "মো. শাহরিয়ার কবির",
     bloodGroup: "AB+",
-    phone: "+8801612345681",
+    phone: "+880XXXXXXXX",
     location: "ধুনট রোড, শেরপুর, বগুড়া",
     lastDonation: "১৮ ডিসেম্বর, ২০২৫",
     available: true,
@@ -70,7 +70,7 @@ const donors: Donor[] = [
   {
     name: "তানভীর আহমেদ",
     bloodGroup: "O-",
-    phone: "+8801512345682",
+    phone: "+880XXXXXX",
     location: "বিনোদপুর দক্ষিণপাড়া, শেরপুর",
     lastDonation: "৩০ মে, ২০২৬",
     available: false,
@@ -78,7 +78,7 @@ const donors: Donor[] = [
   {
     name: "সাবরিনা ইয়াসমিন",
     bloodGroup: "A-",
-    phone: "+8801712345683",
+    phone: "+8801XXXXXXX",
     location: "শেরপুর সদর, বগুড়া",
     lastDonation: "১২ ফেব্রুয়ারি, ২০২৬",
     available: true,
@@ -86,7 +86,7 @@ const donors: Donor[] = [
   {
     name: "মো. জাহিদ হাসান",
     bloodGroup: "B-",
-    phone: "+8801812345684",
+    phone: "+880XXXXXXXX",
     location: "কুসুম্বী, শেরপুর, বগুড়া",
     lastDonation: "৮ জুন, ২০২৬",
     available: true,
@@ -94,7 +94,7 @@ const donors: Donor[] = [
   {
     name: "নুসরাত জাহান",
     bloodGroup: "AB-",
-    phone: "+8801912345685",
+    phone: "+880XXXXXXX",
     location: "বিনোদপুর মধ্যপাড়া, শেরপুর",
     lastDonation: "১৫ নভেম্বর, ২০২৫",
     available: false,
@@ -102,7 +102,7 @@ const donors: Donor[] = [
   {
     name: "মো. ইমরান হোসেন",
     bloodGroup: "O+",
-    phone: "+8801612345686",
+    phone: "+88016XXXXXX",
     location: "ঘোগা, শেরপুর, বগুড়া",
     lastDonation: "২ এপ্রিল, ২০২৬",
     available: true,
@@ -110,7 +110,7 @@ const donors: Donor[] = [
   {
     name: "রাকিবুল হাসান",
     bloodGroup: "A+",
-    phone: "+8801512345687",
+    phone: "+8801XXXXXXX",
     location: "বিনোদপুর বাজারপাড়া, শেরপুর",
     lastDonation: "২৫ জুন, ২০২৬",
     available: true,
@@ -118,7 +118,7 @@ const donors: Donor[] = [
   {
     name: "সুমাইয়া আক্তার",
     bloodGroup: "B+",
-    phone: "+8801712345688",
+    phone: "+880XXXXXXX",
     location: "শেরপুর কলেজ রোড, বগুড়া",
     lastDonation: "১৯ জানুয়ারি, ২০২৬",
     available: true,
@@ -126,7 +126,7 @@ const donors: Donor[] = [
   {
     name: "মো. নাজমুল হক",
     bloodGroup: "O+",
-    phone: "+8801812345689",
+    phone: "+8801XXXXXXX",
     location: "বিনোদপুর স্কুলপাড়া, শেরপুর",
     lastDonation: "৭ মে, ২০২৬",
     available: true,
