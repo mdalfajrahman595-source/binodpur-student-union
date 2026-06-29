@@ -21,64 +21,80 @@ const committeeData: CommitteeMember[] = [
     id: 1,
     name: "মোঃ আসাদুল ইসলাম",
     position: "সভাপতি",
-    phone: "+৮৮০১৭XXXXXXXX",
-    intro: "বিনোদপুর ছাত্র পরিষদের প্রতিষ্ঠাতা সদস্য ও বর্তমান সভাপতি। শিক্ষা ও সমাজসেবায় নিবেদিত।",
+    phone: "+8801773864302",
+    intro: "বি.এ (অনার্স), এম.এ (গণিত বিভাগ) সরকারি আজিজুল হক কলেজ",
     category: "executive",
   },
   {
     id: 2,
     name: "মো: রাজু আহম্মেদ",
     position: "সিনিয়র সহ-সভাপতি",
-    phone: "+৮৮০১৮XXXXXXXX",
-    intro: "সংগঠনের কার্যক্রম পরিচালনায় সক্রিয় ভূমিকা পালনকারী একজন নিবেদিতপ্রাণ নেতা।",
+    phone: "+880 1303-574956",
+    intro: "বি.এ (অনার্স), এম.এ (ইংরেজি বিভাগ) সরকারি আজিজুল হক কলেজ, বগুড়া",
     category: "executive",
   },
   {
     id: 3,
     name: "মোঃ আলফাজ রহমান",
     position: "তথ্য প্রযুক্তি ও প্রচার সম্পাদক",
-    phone: "+৮৮০১৮৬৩৩৯৮১৫৫",
-    intro: "সংগঠনের তথ্যপ্রযুক্তি ও ওয়েবসাইট পরিচালনার দায়িত্বে নিয়োজিত। ডিজিটাল উন্নয়নে অগ্রণী।",
+    phone: "+8801863398155",
+    intro: "বিএসসি ইঞ্জিনিয়ারিং(কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং বিভাগ)-নেত্রকোনা বিশ্ববিদ্যালয়",
     category: "executive",
   },
   {
     id: 4,
     name: "ইউনুস আলী সিয়াম",
-    position: "যুগ্ম সম্পাদক",
-    phone: "+৮৮০১৯XXXXXXXX",
-    intro: "সাংগঠনিক কার্যক্রম সমন্বয়ে দক্ষ এবং শিক্ষার্থীদের অধিকার আদায়ে সোচ্চার।",
+    position: "সহ-সভাপতি",
+    phone: "+8801760100542",
+    intro: "বিএসসি ইন ম্যাথমেটিক্স সরকারি আজিজুল হক কলেজ, বগুড়া",
     category: "executive",
   },
   {
     id: 5,
     name: "ইউসুফ আলী সাইম",
-    position: "সাংগঠনিক সম্পাদক",
-    phone: "+৮৮০১৭XXXXXXXX",
-    intro: "নতুন সদস্য সংগ্রহ ও সাংগঠনিক কাঠামো মজবুত করতে নিরলস কাজ করে যাচ্ছেন।",
+    position: "যুগ্ম সাধারণ সম্পাদক",
+    phone: "+880 1783-656525",
+    intro: "বিএসসি ইন স্ট্যাটিসটিক্স সরকারি আজিজুল হক কলেজ, বগুড়া",
     category: "executive",
   },
   {
     id: 6,
     name: "মাহমুদ হাসান অনিক",
-    position: "অর্থ সম্পাদক",
-    phone: "+৮৮০১৬XXXXXXXX",
-    intro: "সংগঠনের আর্থিক ব্যবস্থাপনা ও হিসাব-নিকাশ সুষ্ঠুভাবে পরিচালনা করে থাকেন।",
+    position: "সাংগাঠনিক সম্পাদক",
+    phone: "+8801735963387",
+    intro: "বিএসসি ইন ম্যাথমেটিক্স (অধ্যয়নরত) সরকারি শাহ সুলতান কলেজ, বগুড়া",
     category: "executive",
   },
   {
     id: 7,
-    name: "আবু তাহের",
-    position: "প্রচার সম্পাদক",
-    phone: "+৮৮০১৫XXXXXXXX",
-    intro: "সামাজিক মাধ্যম ও প্রচারণায় সংগঠনের ভাবমূর্তি উজ্জ্বল রাখতে কাজ করে যাচ্ছেন।",
+    name: "সজীব হাসান",
+    position: "শিক্ষা সম্পাদক",
+    phone: "+880 1567-908686",
+    intro: "বিএসসি ইন পদার্থবিজ্ঞান,ঢাকা বিশ্ববিদ্যালয়",
     category: "executive",
   },
   {
     id: 8,
+    name: "আবু তাহের",
+    position: "কোষাধ্যক্ষ",
+    phone: "+880 1799-215612",
+    intro: "বি.এ অনার্স- বাংলা (অধ্যয়নরত) সরকারি আজিজুল হক কলেজ, বগুড়া",
+    category: "executive",
+  },
+  {
+    id: 9,
     name: "এনামুল হক",
-    position: "ক্রীড়া সম্পাদক",
-    phone: "+৮৮০১৭XXXXXXXX",
-    intro: "আন্তঃওয়ার্ড ক্রীড়া প্রতিযোগিতা ও খেলাধুলার আয়োজনে মুখ্য ভূমিকা পালন করেন।",
+    position: "সমাজসেবা সম্পাদক",
+    phone: "+880 1736-524113",
+    intro: "বিএসসি ইন কেমিস্ট্রি,সরকারি শাহ সুলতান কলেজ, বগুড়া",
+    category: "executive",
+  },
+   {
+    id: 10,
+    name: "মো: নাজিম উদ্দীন",
+    position: "দপ্তর সম্পাদক",
+    phone: "+880 1753-924130",
+    intro: "বিএসসি ইন প্রাণিবিদ্যা,সরকারি শাহ সুলতান কলেজ, বগুড়া",
     category: "executive",
   },
   // Advisory
@@ -86,7 +102,7 @@ const committeeData: CommitteeMember[] = [
     id: 9,
     name: "জনাব বদিউজ্জামান",
     position: "উপদেষ্টা",
-    phone: "+৮৮০১৭XXXXXXXX",
+    phone: "+880 1736-603047",
     intro: "দীর্ঘ অভিজ্ঞতাসম্পন্ন সমাজসেবক। সংগঠনের প্রতিষ্ঠালগ্ন থেকে পথ দেখিয়ে আসছেন।",
     category: "advisory",
   },
@@ -94,7 +110,7 @@ const committeeData: CommitteeMember[] = [
     id: 10,
     name: "জনাব কামরুল ইসলাম কহির",
     position: "উপদেষ্টা",
-    phone: "+৮৮০১৮XXXXXXXX",
+    phone: "+880 1760-285784",
     intro: "শিক্ষা ও সমাজ উন্নয়নে বিশেষজ্ঞ। তরুণ প্রজন্মের অনুপ্রেরণার উৎস।",
     category: "advisory",
   },
@@ -112,7 +128,7 @@ const committeeData: CommitteeMember[] = [
     id: 12,
     name: "জনাব রুমেল",
     position: "উপদেষ্টা",
-    phone: "+৮৮০১৯XXXXXXXX",
+    phone: "+880 1303-100528",
     intro: "স্থানীয় উন্নয়নকর্মী ও সমাজের বিশিষ্ট ব্যক্তিত্ব। সংগঠনের পথচলায় নির্ভরযোগ্য অভিভাবক।",
     category: "advisory",
   },
@@ -121,7 +137,7 @@ const committeeData: CommitteeMember[] = [
     id: 13,
     name: "জনাব রেফাইতুল ইসলাম পিনু",
     position: "উপদেষ্টা",
-    phone: "+৮৮০১৯XXXXXXXX",
+    phone: "+880 1712-369733",
     intro: "স্থানীয় উন্নয়নকর্মী ও সমাজের বিশিষ্ট ব্যক্তিত্ব। সংগঠনের পথচলায় নির্ভরযোগ্য অভিভাবক।",
     category: "advisory",
   },
@@ -161,7 +177,7 @@ const committeeData: CommitteeMember[] = [
     id: 17,
     name: "শাহাদাৎ হোসেন",
     position: "কার্যনির্বাহী সদস্য",
-    phone: "+৮৮০১৭XXXXXXXX",
+    phone: "+8801736097956",
     intro: "সংগঠনের বিভিন্ন কার্যক্রমে সক্রিয় অংশগ্রহণকারী উদ্যমী সদস্য।",
     category: "general",
   },
@@ -169,7 +185,7 @@ const committeeData: CommitteeMember[] = [
     id: 18,
     name: "আলিফ হোসেন",
     position: "কার্যনির্বাহী সদস্য",
-    phone: "+৮৮০১৮XXXXXXXX",
+    phone: "+880 1737-267088",
     intro: "রক্তদান ও স্বেচ্ছাসেবামূলক কার্যক্রমে সবসময় অগ্রণী ভূমিকা রাখেন।",
     category: "general",
   },
@@ -185,7 +201,7 @@ const committeeData: CommitteeMember[] = [
     id: 20,
     name: "আবু হাসান",
     position: "কার্যনির্বাহী সদস্য",
-    phone: "+৮৮০১৫XXXXXXXX",
+    phone: "+880 1757-972768",
     intro: "ডিজিটাল প্রযুক্তি ও সোশ্যাল মিডিয়া পরিচালনায় দক্ষ এবং উদ্যমী।",
     category: "general",
   },
@@ -270,9 +286,11 @@ function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <a href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center text-[#0a1f44] font-extrabold text-xs shadow-lg shadow-yellow-500/30">
-              BSWU
-            </div>
+            <img
+  src="/logobsu.jpeg"
+  alt="BSWU Logo"
+  className="w-12 h-12 rounded-full object-cover shadow-lg ring-2 ring-yellow-400/40"
+/>
             <div className="hidden sm:block">
               <p className="text-white font-bold text-sm leading-tight">
                 বিনোদপুর ছাত্র পরিষদ
@@ -641,9 +659,11 @@ function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center text-[#0a1f44] font-extrabold text-xs shadow-lg">
-                BSWU
-              </div>
+              <img
+  src="/logobsu.jpeg"
+  alt="BSWU Logo"
+  className="w-12 h-12 rounded-full object-cover shadow-lg ring-2 ring-yellow-400/40"
+/>
               <div>
                 <p className="text-white font-bold text-base leading-tight">বিনোদপুর ছাত্র পরিষদ</p>
                 <p className="text-yellow-400 text-xs">শিক্ষায় আলো, সেবায় জীবন</p>

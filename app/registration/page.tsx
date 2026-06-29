@@ -108,9 +108,11 @@ function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <a href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center text-[#0a1f44] font-extrabold text-xs shadow-lg shadow-yellow-500/30">
-              BSWU
-            </div>
+          <img
+  src="/logobsu.jpeg"
+  alt="BSWU Logo"
+  className="w-12 h-12 rounded-full object-cover shadow-lg ring-2 ring-yellow-400/40"
+/>
             <div className="hidden sm:block">
               <p className="text-white font-bold text-sm leading-tight">
                 বিনোদপুর ছাত্র পরিষদ
@@ -812,9 +814,11 @@ function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center text-[#0a1f44] font-extrabold text-xs shadow-lg">
-                BSWU
-              </div>
+             <img
+  src="/logobsu.jpeg"
+  alt="BSWU Logo"
+  className="w-12 h-12 rounded-full object-cover shadow-lg ring-2 ring-yellow-400/40"
+/>
               <div>
                 <p className="text-white font-bold text-base leading-tight">
                   বিনোদপুর ছাত্র পরিষদ

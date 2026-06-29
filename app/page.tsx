@@ -50,11 +50,11 @@ const navLinks = [
 const stats: Stat[] = [
   { value: "৫০০+", label: "মোট সদস্য", icon: "👥" },
   { value: "১২০+", label: "মোট কার্যক্রম", icon: "📋" },
-  { value: "৮০+", label: "রক্তদাতা", icon: "🩸" },
+  { value: "১২+", label: "রক্তদাতা", icon: "🩸" },
 ];
 
 const bloodStats: BloodStat[] = [
-  { value: "৮০+", label: "মোট রক্তদাতা", icon: "🩸" },
+  { value: "১২+", label: "মোট রক্তদাতা", icon: "🩸" },
   { value: "৮টি", label: "উপলব্ধ রক্তের গ্রুপ", icon: "🧬" },
   { value: "১২+", label: "সাম্প্রতিক রক্তদান", icon: "📅" },
 ];
@@ -204,9 +204,11 @@ function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <a href="#home" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center text-[#0a1f44] font-extrabold text-xs shadow-lg shadow-yellow-500/30">
-              BSWU
-            </div>
+                       <img
+  src="/logobsu.jpeg"
+  alt="BSWU Logo"
+  className="w-12 h-12 rounded-full object-cover shadow-lg ring-2 ring-yellow-400/40"
+/>
             <div className="hidden sm:block">
               <p className="text-white font-bold text-sm leading-tight">
                 বিনোদপুর ছাত্র পরিষদ
@@ -297,9 +299,13 @@ function Hero() {
 
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto pt-20">
         {/* Emblem */}
-        <div className="mx-auto mb-8 w-28 h-28 rounded-full bg-gradient-to-br from-yellow-400 via-yellow-500 to-yellow-700 flex items-center justify-center shadow-2xl shadow-yellow-500/30 ring-4 ring-yellow-400/20">
-          <span className="text-[#0a1f44] font-extrabold text-xl">BSWU</span>
-        </div>
+       <div className="mx-auto mb-8 w-28 h-28 rounded-full shadow-2xl shadow-yellow-500/30 ring-4 ring-yellow-400/20 overflow-hidden">
+  <img
+    src="/logobsu.jpeg"
+    alt="BSWU Logo"
+    className="w-full h-full object-cover"
+  />
+</div>
 
         <p className="text-yellow-400 text-sm font-semibold tracking-[0.3em] uppercase mb-4">
           — স্বাগতম —
@@ -726,9 +732,13 @@ function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center text-[#0a1f44] font-extrabold text-xs shadow-lg">
-                BSWU
-              </div>
+              
+
+              <img
+  src="/logobsu.jpeg"
+  alt="BSWU Logo"
+  className="w-12 h-12 rounded-full object-cover shadow-lg ring-2 ring-yellow-400/40"
+/>
               <div>
                 <p className="text-white font-bold text-base leading-tight">
                   বিনোদপুর ছাত্র পরিষদ

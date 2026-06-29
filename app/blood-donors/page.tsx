@@ -76,7 +76,7 @@ const donors: Donor[] = [
     available: true,
   },
   {
-    name: "মোঃ কামরুল হাসান",
+    name: "মোঃ কামরুল হাসান কহির",
     bloodGroup: "O+",
     phone: "+8801760285784",
     location: "বিনোদপুর, সুঘাট, শেরপুর, বগুড়া",
@@ -92,52 +92,52 @@ const donors: Donor[] = [
     available: true,
   },
   {
-    name: "নুসরাত জাহান",
-    bloodGroup: "AB-",
-    phone: "+880XXXXXXX",
-    location: "বিনোদপুর মধ্যপাড়া, শেরপুর",
-    lastDonation: "১৫ নভেম্বর, ২০২৫",
-    available: false,
+    name: " এম. এম. শাহাদত হোসাঈন সিদ্দকী",
+    bloodGroup: "AB+",
+    phone: "+8801736097956",
+    location: "বিনোদপুর, সুঘাট, শেরপুর, বগুড়া",
+    lastDonation: "২০ জুন ২০২৫",
+    available: true,
   },
   {
-    name: "মো. ইমরান হোসেন",
-    bloodGroup: "O+",
-    phone: "+88016XXXXXX",
-    location: "ঘোগা, শেরপুর, বগুড়া",
-    lastDonation: "২ এপ্রিল, ২০২৬",
-    available: false,
-  },
-  {
-    name: "রাকিবুল হাসান",
+    name: "মোঃ সুমন হোসেন",
     bloodGroup: "A+",
-    phone: "+8801XXXXXXX",
-    location: "বিনোদপুর বাজারপাড়া, শেরপুর",
-    lastDonation: "২৫ জুন, ২০২৬",
-    available: false,
+    phone: "+8801771922969",
+    location: "বিনোদপুর, সুঘাট, শেরপুর, বগুড়া",
+    lastDonation: "২ এপ্রিল, ২০২৬",
+    available: true,
   },
   {
-    name: "সুমাইয়া আক্তার",
-    bloodGroup: "B+",
-    phone: "+880XXXXXXX",
-    location: "শেরপুর কলেজ রোড, বগুড়া",
-    lastDonation: "১৯ জানুয়ারি, ২০২৬",
-    available: false,
+    name: "মোঃ কামরুল ইসলাম ",
+    bloodGroup: "O+",
+    phone: "+880 1303-100528",
+    location: "বিনোদপুর, সুঘাট, শেরপুর, বগুড়া",
+    lastDonation: "unknown",
+    available: true,
+  },
+  {
+    name: "আলফাজ রহমান",
+    bloodGroup: "A+",
+    phone: "+8801863398155",
+    location: "বিনোদপুর, সুঘাট, শেরপুর, বগুড়া",
+    lastDonation: "Unavailable",
+    available: true,
   },
   {
     name: "মো. নাজমুল হক",
     bloodGroup: "O+",
     phone: "+8801XXXXXXX",
-    location: "বিনোদপুর স্কুলপাড়া, শেরপুর",
+    location: "বিনোদপুর, সুঘাট, শেরপুর, বগুড়া",
     lastDonation: "৭ মে, ২০২৬",
-    available: false,
+    available: true,
   },
 ];
 
 const stats: Stat[] = [
-  { value: "৮০+", label: "মোট রক্তদাতা", icon: "🩸" },
+  { value: "১২+", label: "মোট রক্তদাতা", icon: "🩸" },
   { value: "৮টি", label: "উপলব্ধ রক্তের গ্রুপ", icon: "🧬" },
   { value: "১২+", label: "সাম্প্রতিক রক্তদান", icon: "📅" },
-  { value: "৪৫+", label: "সফল রক্তদান কর্মসূচি", icon: "🏆" },
+  { value: "২+", label: "সফল রক্তদান কর্মসূচি", icon: "🏆" },
 ];
 
 // ─── Sub-components ──────────────────────────────────────────────────────────
@@ -210,9 +210,11 @@ function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <a href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center text-[#0a1f44] font-extrabold text-xs shadow-lg shadow-yellow-500/30">
-              BSWU
-            </div>
+            <img
+  src="/logobsu.jpeg"
+  alt="BSWU Logo"
+  className="w-12 h-12 rounded-full object-cover shadow-lg ring-2 ring-yellow-400/40"
+/>
             <div className="hidden sm:block">
               <p className="text-white font-bold text-sm leading-tight">
                 বিনোদপুর ছাত্র পরিষদ
@@ -632,9 +634,11 @@ function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center text-[#0a1f44] font-extrabold text-xs shadow-lg">
-                BSWU
-              </div>
+              <img
+  src="/logobsu.jpeg"
+  alt="BSWU Logo"
+  className="w-12 h-12 rounded-full object-cover shadow-lg ring-2 ring-yellow-400/40"
+/>
               <div>
                 <p className="text-white font-bold text-base leading-tight">
                   বিনোদপুর ছাত্র পরিষদ
